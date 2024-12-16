@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "background_color": "#ffffff",
+    "theme_color": "#41b883",
+    "name": "Сайт-визитка Frontend разработчика Фёдора Сивкова",
+    "short_name": "Сайт-визитка Фёдора Сивкова",
+    "lang": "ru",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/favicon/web-app-manifest-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/favicon/web-app-manifest-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  },
+  "strategies": "injectManifest",
+  "srcDir": "pwa",
+  "filename": "sw.js",
+  "devOptions": {
+    "enabled": true,
+    "type": "module"
+  }
+}
