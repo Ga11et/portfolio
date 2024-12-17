@@ -22,7 +22,6 @@
       }
     ]
   },
-  "strategies": "injectManifest",
   "srcDir": "pwa",
   "filename": "sw.js",
   "devOptions": {

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "start": "env-cmd node .output/server/index.mjs",
+    "start": "env-cmd node .output/server/index.mjs --port 3001",
     "test": "vitest run"
   },
   "dependencies": {

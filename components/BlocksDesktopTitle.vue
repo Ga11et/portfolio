@@ -1,8 +1,14 @@
 <template>
   <div :class="$style.container">
-    <h1 :class="$style.title">
-      <span>Сайт-визитка</span><span>Frontend разработчика</span><span>Фёдора Сивкова</span>
-    </h1>
+    <div :class="$style.content">
+      <h1 :class="$style.title">
+        <span>Сайт-визитка</span><span>Frontend разработчика</span><span>Фёдора Сивкова</span>
+      </h1>
+    </div>
+
+    <div :class="$style.background">
+      <PixiMainBackground />
+    </div>
   </div>
 </template>
 
@@ -10,12 +16,32 @@
 
 <style lang="scss" module>
 .container {
+  height: 100dvh;
+  width: 100%;
+
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  z-index: $indexDefault;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+}
+
+.background {
+  position: absolute;
+  z-index: $indexBackground;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: black;
+  height: 100%;
 }
 
 .title {
