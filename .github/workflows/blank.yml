@@ -37,3 +37,4 @@ jobs:
             nvm use 20;
             yarn;
             yarn build;
+            pm2 restart portfolio;
