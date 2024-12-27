@@ -6,7 +6,7 @@ export interface Speed {
   rotation: number;
 }
 
-export interface Triangle {
+export interface Triangle extends Sprite {
   speed: Speed;
-  sprite: Sprite;
+  is_on_floor: boolean;
 }
