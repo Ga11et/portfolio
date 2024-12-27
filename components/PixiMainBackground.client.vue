@@ -89,7 +89,7 @@ function handle_triangles(time: Ticker) {
       if (is_should_jump) {
         const isLeft = triangle.x < mouse_point.value.x;
         triangle.speed.rotation = isLeft ? -0.1 : 0.1;
-        const normalized_strength_x = Math.max(-10, Math.min(10, mouse_point.value.strength_x));
+        const normalized_strength_x = Math.max(-8, Math.min(8, mouse_point.value.strength_x));
         const final_strength_x =
           Math.abs(normalized_strength_x) < 3 ? Math.sign(normalized_strength_x) * 3 : normalized_strength_x;
         triangle.speed.x = 6 * final_strength_x * get_math_random_more_variable();
